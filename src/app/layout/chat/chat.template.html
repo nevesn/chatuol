@@ -1,0 +1,8 @@
+<input ng-model= "vm.description" placeholder="mensagem" >
+<button ng-click= "vm.submit()">enviar</button>
+<div ng-repeat = "mensagens in vm.messages ">
+    <p>{{historico[vm.messages.indexOf(mensagens)]}}</p>    
+    <p>{{mensagens}}</p>
+</div>
+<ui-view></ui-view>
+
